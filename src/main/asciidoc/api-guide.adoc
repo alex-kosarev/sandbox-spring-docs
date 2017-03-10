@@ -1,0 +1,31 @@
+= RESTful Notes API Guide
+Alexander Kosarev;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 5
+:sectlinks:
+
+== Entities
+=== Person
+include::{snippets}/person/one/response-fields.adoc[]
+
+== Services
+=== Person service
+==== List of persons
+===== Request structure
+include::{snippets}/person/list/http-request.adoc[]
+===== Request parameters
+include::{snippets}/person/list/request-parameters.adoc[]
+===== Response structure
+include::{snippets}/person/list/http-response.adoc[]
+Successful response will return array of link:#_person[Persons]
+
+==== One person
+===== Request structure
+include::{snippets}/person/one/http-request.adoc[]
+===== Request parameters
+include::{snippets}/person/one/path-parameters.adoc[]
+===== Response structure
+include::{snippets}/person/one/http-response.adoc[]
